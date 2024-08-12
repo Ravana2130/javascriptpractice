@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <input id="ageId" type="number" placeholder="enter your age" />
+    <button onclick="validate()">Vote..!</button>
+    <script>
+      const ageInputElement = document.getElementById("ageId");
+      const paragraphelemet = document.getElementById("demo");
+      function validate() {
+        // block of code
+        console.log("value of ageinput", ageInputElement.value);
+        if (ageInputElement.value > 18) {
+          // if the condition is true then block of code is executed
+          paragraphelemet.innerHTML = "Great..! You are eligible to vote";
+        } else {
+          paragraphelemet.innerHTML = "You are not eligible to vote";
+        }
+      }
+    </script>
+  </body>
+</html>
