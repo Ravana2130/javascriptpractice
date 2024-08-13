@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array sorting</h1>
+    <p id="numId"></p>
+    <input id="numInputId" type="number" placeholder="enter number" />
+    <button onclick="onAddNumberClicked()">Add number to the array</button>
+    <br />
+    <input id="fruitInputId" type="text" placeholder="enter text " />
+    <button onclick="onAddFruitsClicked()">Add fruits to the array</button>
+    <p id="fruitId"></p>
+    <script>
+      const numbersArray = [];
+      const fruitsArray = [];
+      const paragraphNumelement = document.getElementById("numId");
+      const inputNumberElement = document.getElementById("numInputId");
+      function onAddNumberClicked() {
+        console.log("value of input box", inputNumberElement.value);
+        numbersArray.push(Number(inputNumberElement.value));
+        paragraphNumelement.innerHTML = numbersArray.join("/");
+      }
+
+      const paragraphFruitsElement = document.getElementById("fruitId");
+      const inputFruitElement = document.getElementById("fruitInputId");
+      function onAddFruitsClicked() {
+        console.log("value of input box", inputFruitElement.value);
+        fruitsArray.push(inputFruitElement.value);
+        paragraphFruitsElement.innerHTML = fruitsArray.join("/");
+      }
+    </script>
+  </body>
+</html>
