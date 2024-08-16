@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array sorting in descending order</h1>
+    <p id="demo"></p>
+    <script>
+        // numbers sorted in descending order
+        const numbersArray=[4,6,8,1,2,7]
+        numbersArray.sort(function(a , b){
+            return b - a ;
+        })
+        document.getElementById("demo").innerHTML=numbersArray.join("|")
+    </script>
+</body>
+</html>
