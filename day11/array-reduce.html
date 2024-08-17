@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array reduce</h1>
+    <p id="demo"></p>
+    <p id="sum"></p>
+    <script>
+        const numbers=[45,4,16,25]
+        const sum=numbers.reduce(function(accumulator,value,index,array){
+            console.log(accumulator,value,index,array)
+            return accumulator + value;
+        },0)
+        document.getElementById("demo").innerHTML=numbers.join(" , ")
+        document.getElementById("sum").innerHTML=sum
+    </script>
+</body>
+</html>

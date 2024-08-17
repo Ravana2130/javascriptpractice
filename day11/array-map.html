@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>array map</h1>
+    <p id="demo"></p>
+    <script>
+      const numbers1 = [4, 5, 6, 2, 7, 5, 8];
+      let txt = " ";
+      const numbers2 = numbers1.map(function (value) {
+        txt += "|" + 2 * value;
+        return 2 * value;
+      });
+      console.log("numbers1", numbers1);
+      console.log("numbers2", numbers2);
+      document.getElementById("demo").innerHTML = txt.slice(1);
+    </script>
+  </body>
+</html>

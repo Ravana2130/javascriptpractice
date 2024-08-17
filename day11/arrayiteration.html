@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>array iteration</h1>
+    <p id="demo"></p>
+    <script>
+      const numArray = [25, 56, 84, 52, 44, 36, 555];
+      numArray.forEach(myfunction);
+      function myfunction(value, index, array) {
+        console.log("value::", value, "index::", index, "array::", array);
+        document.getElementById("demo").innerHTML += " " + value;
+      }
+    </script>
+  </body>
+</html>
